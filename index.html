@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
 	<title>Lavagem</title>
 </head>
+
 <body>
-	<form>
-		<h1>LifeInvader</h1>
-	<label for="valor">Dinheiro Sujo:</label>
-	<input type="text" id="valor" name="valor"><br><br>
-	<label for="porcentagem">Porcentagem de lucro:</label>
-	<input type="number" id="porcentagem" name="porcentagem" value="15"><br><br>
-    <button type="button" onclick="calcular()">Calcular</button>
-	<label for="solventes">Quantidade de solventes:</label>
-	<input type="text" id="solventes" name="solventes" disabled><br><br>
-	<label for="papel">Quantidade de papel moeda:</label>
-	<span id="qtdPapelMoeda"></span>
-	<span id="valorPapelMoeda"></span><br><br>
-	<label for="lucro">Lucro:</label>
-	<input type="text" id="lucro" name="lucro" disabled><br><br>
-	<label for="cliente">Valor do cliente:</label>
-	<input type="text" id="cliente" name="cliente" disabled><br><br>
-	</form>
-    <script src="script.js"></script>
+	<section class="container">
+		<form>
+			<h1><b>Life</b>Invader</h1>
+			<h5>it's not technology, it's your life</h5>
+			<label for="valor">Dinheiro Sujo:</label>
+			<input type="text" id="valor" name="valor">
+			<label for="porcentagem">Porcentagem de lucro:</label>
+			<input type="number" id="porcentagem" name="porcentagem" value="15">
+			<button type="button" onclick="calcular(); gerarRelatorio();">Calcular</button>
+			<label for="solventes">Quantidade de solventes:</label>
+			<input type="text" id="solventes" name="solventes" disabled>
+			<label for="papel">Quantidade de papel moeda:</label>
+			<span id="qtdPapelMoeda"></span>
+			<span id="valorPapelMoeda"></span><br><br>
+			<label for="lucro">Dinheiro limpo para nós:</label>
+			<input type="text" id="lucro" name="lucro" disabled>
+			<label for="cliente">Dinheiro limpo para o cliente:</label>
+			<input type="text" id="cliente" name="cliente" disabled>
+
+		</form>
+	</section>
+	<script src="script.js"></script>
+
 </body>
+
 </html>

@@ -1,68 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
 body {
-    background-color: #f8f8f8;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #700000;
+  padding: 1rem;
+  color: hsl(0, 0%, 0%);
+  background-image: url("/pxfuel.jpg");
+  backdrop-filter: blur(0.5rem);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  font-size: 30px;
+  color: #d60303;
+}
+
+h5 {
+  text-align: center;
+  color: #fff;
+  transition: 1s;
+}
+
+h5:hover {
+  color: #7a7a7a;
 }
 
 form {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  margin: 0 auto;
+  max-width: 450px;
 }
 
 label {
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-weight: bold;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 input[type="text"],
-input[type="number"]
-  {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 100%;
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
 }
 
 button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 100%;
-    transition: 0.5s;
+  background-color: #bb0000;
+  border: none;
+  border-radius: 1.2rem 0.3rem;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  transition: 0.5s;
 }
 
 button:hover {
-    background-color: #3e8e41;
+  background-color: #970000;
 }
 
 input[type="text"][disabled],
 input[type="number"][disabled] {
-    background-color: #eee;
-    color: #888;
+  background-color: #eee;
+  color: #464646;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.7rem;
+  border: 0.5px solid hsla(0, 0%, 0%, 0.253);
+  padding: 1.4rem;
+  box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.1),
+    0px 48px 30px 15px rgba(0, 0, 0, 0.5);
 }
